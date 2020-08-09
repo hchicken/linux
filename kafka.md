@@ -48,6 +48,6 @@ docker run -d --name zookeeper -p 2181:2181 -t wurstmeister/zookeeper
 
 ### 启动kafka
 
-```
-docker run  -d --name kafka -p 9092:9092 -e KAFKA_BROKER_ID=0 -e KAFKA_ZOOKEEPER_CONNECT=10.1.14.167:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://10.1.14.167:9092 -e KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092 -t wurstmeister/kafka
+```bash
+docker run  -d --name kafka -p 9092:9092 -e KAFKA_BROKER_ID=0 -e KAFKA_ZOOKEEPER_CONNECT=x.x.x.x:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://x.x.x.x:9092 -e KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092 -t wurstmeister/kafka
 ```
